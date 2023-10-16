@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+          
+        <div class="container-navbar">
+            <ul class="ul-navbar">
+                <li class="li-navbar"><img src="apple.png" style="height: 17px; width: 15px;"></li>
+                <li class="li-navbar"><a href="#" class="nav-bar">Store</a></li>
+                <li class="li-navbar"><a href="" class="nav-bar">Mac</a></li>
+                <li class="li-navbar"><a href="" class="nav-bar">Ipad</a></li>
+                <li class="li-navbar"><a href="" class="nav-bar">iphone</a></li>
+                <li class="li-navbar"><a href="" class="nav-bar">Watch</a></li>
+                <li class="li-navbar"><a href="" class="nav-bar">Vision</a></li>
+                <li class="li-navbar"><a href="" class="nav-bar">AirPods</a></li>
+                <li class="li-navbar"><a href="" class="nav-bar">TV & Home</a></li>
+                <li class="li-navbar"><a href="" class="nav-bar">Entertaiment</a></li>
+                <li class="li-navbar"><a href="" class="nav-bar">Accessories</a></li>
+                <li class="li-navbar"><a href="" class="nav-bar">Support</a></li>
+                <li class="li-navbar"><a href="" class="nav-bar"><img src="bag.png" style="height: 15px; width: 15px;"></a></li>
+                <li class="li-navbar"><a href="" class="nav-bar"><img src="search.png" style="height: 15px; width: 15px;"></a></li>
+            </ul>
+        </div> 
+    <div class="content1-container">
+        <a href="" class="img.content"><img src="content.png" height="100%" width="100%"></a>
+        </div> 
+    <div class="text-content1">
+            <a href="" class="iphone"><h1>iphone 15 Pro</h1><p>Titanium. So strong. So light. So pro.</p><br> <p>Learn more  >   Buy    ></p></a>
+        </div>
+    <div class="content2-container">
+            <a href="" class="iphone2"><img src="content2.png" style="height:50% ; width:100% ;"></a>
+        </div>
+    <script>
+        var container_navbar = document.getElementById("container-navbaar")
+        var ul_navbar = document. getElementById("ul-navbar")
+
+        window.onscroll=function(){
+            if(window.pageYOffset >= ul_navbar.offsetTop){ 
+                container_navbar.classList.add ("sticky")
+            }
+            else{
+                container_navbar.classList.remove ("sticky")
+            }
+        }
+    </script>
+</body>
+</html>
